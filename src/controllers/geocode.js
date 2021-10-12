@@ -47,9 +47,9 @@ const authHere = (req, res, next) => {
 };
 
 const find = asyncWrap(async (req, res) => {
-  const { address } = req.query;
+  const { q } = req.query;
   const hereToken = req.hereAccessToken;
-  const coordinates = await getCoordinates(hereToken, address);
+  const coordinates = await getCoordinates(hereToken, q);
   res.send(coordinates);
 });
 

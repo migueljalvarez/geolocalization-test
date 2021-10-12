@@ -6,7 +6,7 @@ const buildSignUpUserDto = (user) => {
     name: user.name,
     lastname: user.lastname,
     email: user.email,
-    accessToken: jwt.sign(user, false),
+    accessToken: jwt.sign({ id: user.id, email: user.email }, false),
   };
   return dto;
 };

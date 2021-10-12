@@ -1,8 +1,7 @@
 class ApplicationError extends Error {
   // eslint-disable-next-line no-unused-vars
-  constructor(error, status, origin) {
+  constructor(error, status) {
     // Calling parent constructor of base Error class.
-    console.log(origin)
     super(error.message);
 
     // Saving class name in the property of our custom error as a shortcut.

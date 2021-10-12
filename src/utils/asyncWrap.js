@@ -1,8 +1,9 @@
 export default (fn) => {
   return async (req, res, next) => {
     try {
-      return Promise.resolve(fn(req, res, next));
+      await Promise.resolve(fn(req, res, next));
     } catch (err) {
+      console.log(err)
       res.status(err.status || 500).json(err);
     }
   };

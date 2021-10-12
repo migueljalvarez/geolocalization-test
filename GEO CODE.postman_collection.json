@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "bddaeac2-47e0-4365-ac1b-96286d3dac21",
+		"name": "GEO CODE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Address",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTYzNDA3NzQ2NCwiZXhwIjoxNjM0MDgxMDY0fQ.9TeS3_v4Yl1U5qjY-6I3x6WwFKxeOjw49OezgQlJYns",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/address?q=CIRCULAR 3 74-32, MEDELLIN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"address"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "sqDeerp5AdB6NuRbd1Y6nOmIhOrqeWJlb63TWugJBFs",
+							"disabled": true
+						},
+						{
+							"key": "q",
+							"value": "CIRCULAR 3 74-32, MEDELLIN"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"example\",\n    \"lastname\": \"example\",\n    \"email\": \"example@gmail.com\",\n    \"password\": \"20621265jm\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"signup"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "sqDeerp5AdB6NuRbd1Y6nOmIhOrqeWJlb63TWugJBFs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"example\",\n    \"lastname\": \"example\",\n    \"email\": \"example@gmail.com\",\n    \"password\": \"20621265jm\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "sqDeerp5AdB6NuRbd1Y6nOmIhOrqeWJlb63TWugJBFs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJleGFtcGxlQGdtYWlsLmNvbSIsImlhdCI6MTYzNDA3NzQ2NCwiZXhwIjoxNjM0MDgxMDY0fQ.9TeS3_v4Yl1U5qjY-6I3x6WwFKxeOjw49OezgQlJYns",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/refresh/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"refresh",
+						"token"
+					],
+					"query": [
+						{
+							"key": "apiKey",
+							"value": "sqDeerp5AdB6NuRbd1Y6nOmIhOrqeWJlb63TWugJBFs",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

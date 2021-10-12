@@ -2,7 +2,6 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const {
-  PORT: port = 3000,
   DB_DATABASE,
   DB_USERNAME,
   DB_PASSWORD,
@@ -15,7 +14,7 @@ const {
 
 const config = {
   app: {
-    port,
+    port: 3000,
   },
   hereCredentials: {
     key: HERE_API_KEY,
