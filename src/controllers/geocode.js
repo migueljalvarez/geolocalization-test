@@ -26,7 +26,7 @@ const authHere = (req, res, next) => {
     const headers = oauth.toHeader(oauth.authorize(requestData));
     const callback = (err, response, body) => {
       if (err) {
-        res.send(err);
+        throw err;
       }
       if (response.statusCode === 200) {
         const result = JSON.parse(body);

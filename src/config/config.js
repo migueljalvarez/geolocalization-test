@@ -10,6 +10,7 @@ const {
   DIALECT,
   HERE_API_KEY,
   HERE_API_KEY_SECRET,
+  TOMTOM_API_KEY,
 } = process.env;
 
 const config = {
@@ -19,6 +20,9 @@ const config = {
   hereCredentials: {
     key: HERE_API_KEY,
     secret: HERE_API_KEY_SECRET,
+  },
+  tomtomCredentials: {
+    key: TOMTOM_API_KEY,
   },
   db: {
     database: DB_DATABASE,
